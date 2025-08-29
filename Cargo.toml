@@ -1,0 +1,20 @@
+[package]
+name = "boost_parameter_python"
+description = "Boost C++ library boost_parameter_python packaged using Zanbil"
+version = "0.1.0"
+edition = "2024"
+links = "boost_parameter_python"
+license = "BSL-1.0"
+repository = "https://github.com/zanbilify/boost_parameter_python"
+
+[package.metadata.zanbil]
+make_dependencies_public = true
+
+[dependencies]
+boost_mpl = { version = "0.1.0", path = "../boost_mpl" }
+boost_parameter = { version = "0.1.0", path = "../boost_parameter" }
+boost_preprocessor = { version = "0.1.0", path = "../boost_preprocessor" }
+boost_python = { version = "0.1.0", path = "../boost_python" }
+
+[build-dependencies]
+zanbil-boost-build = "0.1.0"
